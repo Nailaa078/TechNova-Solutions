@@ -1,0 +1,306 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+ /* <---------- section 1 ------------> */
+.s1main{
+    background-image: url("../section1.jpg");
+    background-size: cover;
+    height: 30rem;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.part1{
+    background-color:rgba(255, 255, 255, 0.6);
+    margin: 0px 130px 25px 130px ;
+    height: 10rem;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.s1heading{
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 2rem 5rem 0rem 5rem;
+    text-align: center;
+}
+.s1para{
+    margin:0rem 1rem 3rem 1rem;
+    font-weight: bold;
+    font-size: 18px;
+}
+.s1btns{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.s1btn1{
+    padding: 12px;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+.s1btn2{
+    padding: 12px;
+    background-color: red;
+    color: white;
+    border: none;
+}
+.s1link{
+    color: rgb(58, 58, 219);
+    text-decoration: none;
+}
+                 /* <---------- section 2 ------------> */        
+.s2{
+    background-color: rgb(147, 147, 244);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.s2para{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+.s2inner{
+    background-color: white;
+    padding: 1.3rem;
+    margin-bottom: 1rem;
+    width: 33rem;
+    gap: 2px;
+}
+.s2input{
+    width: 13rem;
+    padding:7px ;
+    background-color: rgb(209, 206, 206);
+    color: rgb(54, 53, 53);
+    border: none;
+}
+.s2btn{
+    padding: 7px;
+    background-color: red;
+    color: white;
+    border: none;
+}
+                 /* <---------- section 3 ------------> */
+.s3{
+    background-color: rgb(237, 234, 234);
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+.s3h2{
+    font-size: 24pt;
+}
+.s3para{
+    font-size: 17pt;
+}
+.s3cards{
+    display: flex;
+    flex-direction: row;
+    padding:2px 200px 2px 200px;
+    gap: 20px;
+}
+.s3card{
+    background-color: white;
+    padding: 10px 20px 10px 20px ;
+}
+h4{
+    color: rgb(77, 77, 225);
+}
+                 /* <---------- section 4 ------------> */
+.s4{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 20px;
+    padding: 40px;
+    width: 1000px;
+    margin: auto;
+    box-sizing: border-box;
+}
+.s4box{
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.s4bluebox{
+    background-color: rgb(147, 147, 244) ;
+    color: white;
+}
+.s4bluebox h3{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 2px 1px 2px;
+}
+.s4bluebox small{
+    font-size: medium;
+}
+.s4box img{
+    width: 100%;
+    height: 100%;  
+}
+.s4textbox{
+    background-color: rgb(205, 201, 201);
+}
+
+                 /* <---------- section 5 ------------> */
+.s5{
+    background-color: white;
+    padding-bottom: 2rem;
+}
+.s5para{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.s5boxes{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 1.5rem; 
+    padding: 0 9rem;
+}
+.s5box{
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+}
+.s5box h1{
+    font-weight: bold;
+    font-size: 40px;
+}
+.s5box p{
+    font-size: 15px;
+    line-height: 1.5;
+  }
+.blue{
+    background-color:rgb(147, 147, 244) ;
+    color: white;
+}
+.red{
+    background-color: red;
+    color: white;
+}
+.grey{
+    background-color:  rgb(205, 201, 201);
+    color: white;
+}
+
+                 /* <---------- section 6 ------------> */
+.s6{
+    background: white;
+    display: flex;
+    flex-direction: row;
+    margin: 2rem  13rem;
+    gap: 2rem;
+    justify-content:space-between; 
+    width: 1200px;
+    margin: 2rem 8rem;
+    gap: 40px; 
+}
+.s6box1{
+     flex: 1;
+}
+.s6h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.s6box1 img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .s6box1 p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  } 
+  .s6link {
+    color: #00aaff;
+    text-decoration: none;
+  } 
+  .s6box1 button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+.s6box2{
+    flex: 1;
+}
+.s6inner1{
+    background-color: #f2f2f2;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+.s6Plus{
+    background-color: #f4511e;
+    color: white;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 20px;
+}
+.s6box2para{
+    margin-bottom: 20px;
+}
+.s6box2para p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .s6box2para ul {
+    list-style-type: "-";
+  }
+  .s6box2para li {
+    margin-bottom: 5px;
+    padding-left: 0px;
+    position: relative;
+  }  
+.s6inner2{
+    background-color: white;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+                 /* <---------- section 7 ------------> */
+.s7{
+   background-color: rgb(147, 147, 244);
+   color: white;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   row-gap: 10px;
+   height: 13rem;
+}
+.s7 p{
+   margin-bottom: 2px;
+}
+
+
