@@ -3,179 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechNova Solutions</title>
+    <title>TechNova Solutions | IT solutions for your business</title>
+    <meta name="description" content="TechNova Solutions provides reliable, proven IT solutions that meet international industry practices and standards.">
     <link rel="stylesheet" href="index.css">
-    <!-- FontAwesome Enabled for icons -->
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
+<body id="top">
 
     <!-- ================= HEADER / NAVBAR ================= -->
     <header class="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">Tech<span>Nova</span></a>
-            <nav class="nav-links">
-                <a href="#">Home</a>
-                <a href="#services">Services</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <button class="nav-cta">Get Started</button>
+            <a href="#top" class="logo">Tech<span>Nova</span></a>
+            <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+                <nav class="nav-links" aria-label="Main">
+                    <a href="#top">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <a href="#signup" class="btn btn-purple nav-cta">Get Started</a>
+            </div>
         </div>
     </header>
 
-    <!------------ section 1 -------------->
-    <section class="s1main">
-        <div class="container s1-content">
-            <div class="part1">
-                 <h1 class="s1heading">We Provide the Best Value for<br/> Business</h1>
-                 <p class="s1para">Reliable, proven solutions that meet international industry practices and standards</p> 
+    <main>
+        <!-- ================= SECTION 1: HERO ================= -->
+        <section class="s1main">
+            <div class="container s1-content">
+                <div class="part1">
+                    <h1 class="s1heading">We Provide the Best Value for Business</h1>
+                    <p class="s1para">Reliable, proven solutions that meet international industry practices and standards</p>
+                </div>
+                <div class="s1btns">
+                    <a class="btn btn-blue" href="#signup">Get started now</a>
+                    <a class="btn btn-red" href="#services">Our services</a>
+                </div>
+                <p class="s1end">Photo by Toa Heftiba on <a class="s1link" href="https://unsplash.com/photos/roaRAkBS-YI" target="_blank" rel="noopener">Unsplash</a></p>
             </div>
-            <div class="s1btns">
-                <button class="s1btn1">GET STARTED NOW</button>
-                <button class="s1btn2">OUR SERVICES</button>
-            </div>
-            <h4 class="s1end">Image from <a class="s1link" href="https://www.freepik.com" target="_blank">Freepik</a></h4>
-        </div>
-    </section>
+        </section>
 
-    <!------------ section 2 -------------->
-    <section class="s2">
-        <div class="container s2-content">
-            <div class="s2para">
-                <h1>Preparing For Your Success, <br/> We Provide Truly IT Solutions</h1>
+        <!-- ================= SECTION 2: SIGN-UP ================= -->
+        <section class="s2" id="signup">
+            <div class="container s2-content">
+                <div class="s2para">
+                    <h2>Preparing for your success, we provide truly IT solutions</h2>
+                </div>
+                <form class="s2inner" id="signup-form" novalidate>
+                    <input class="s2input" type="text" name="username" placeholder="Enter your name" aria-label="Your name" autocomplete="name" required>
+                    <input class="s2input" type="email" name="email" placeholder="Enter a valid email address" aria-label="Email address" autocomplete="email" required>
+                    <button class="btn btn-red s2btn" type="submit">Submit</button>
+                </form>
+                <p class="s2msg" id="signup-msg" role="status" aria-live="polite"></p>
             </div>
-            <div class="s2inner">
-                <input class="s2input" type="text" name="username" placeholder="Enter your Name">
-                <input class="s2input" type="text" name="email" placeholder="Enter a Valid Email Address">
-                <button class="s2btn">Submit</button>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!------------ section 3 -------------->
-    <section class="s3" id="services">
-        <div class="container">
-            <h2 class="s3h2">Services We Are Offering</h2>
-            <p class="s3para">We develop an individual integrated solution for your business and select a<br/> unique set of services for it, combining them with a single strategy and goal.</p>
-            <div class="s3cards">
-                <div class="s3card">
-                    <div class="icon"><i class="fas fa-tablet-alt"></i></div>
-                    <h2>Great Experience</h2>
-                    <p>Whatever the scale and nature of your projects, our specialists have the skills and experience necessary to successfully solve your problems.</p>
-                    <h4>READ MORE &gt;&gt;</h4>
-                </div>
-                <div class="s3card">
-                    <div class="icon"><i class="fa-solid fa-gear"></i></div>
-                    <h2>Digital Marketing</h2>
-                    <p>Whatever the scale and nature of your projects, our specialists have the skills and experience necessary to successfully solve your problems.</p>
-                    <h4>READ MORE &gt;&gt;</h4>
-                </div>
-                <div class="s3card">
-                    <div class="icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-                    <h2>Consulting Services</h2>
-                    <p>Whatever the scale and nature of your projects, our specialists have the skills and experience necessary to successfully solve your problems.</p>
-                    <h4>READ MORE &gt;&gt;</h4>
+        <!-- ================= SECTION 3: SERVICES ================= -->
+        <section class="s3" id="services">
+            <div class="container">
+                <h2 class="s3h2">Services we are offering</h2>
+                <p class="s3para">We develop an individual integrated solution for your business and select a unique set of services for it, combining them with a single strategy and goal.</p>
+                <div class="s3cards">
+                    <article class="s3card">
+                        <div class="icon"><i class="fas fa-award" aria-hidden="true"></i></div>
+                        <h3>Great Experience</h3>
+                        <p>Whatever the scale and nature of your project, our specialists have the skills and experience to solve your problems successfully.</p>
+                        <a class="more" href="#contact">READ MORE &raquo;</a>
+                    </article>
+                    <article class="s3card">
+                        <div class="icon"><i class="fas fa-bullhorn" aria-hidden="true"></i></div>
+                        <h3>Digital Marketing</h3>
+                        <p>Reach the right customers with campaigns built around your goals, from search and social media to email and analytics.</p>
+                        <a class="more" href="#contact">READ MORE &raquo;</a>
+                    </article>
+                    <article class="s3card">
+                        <div class="icon"><i class="fas fa-comments" aria-hidden="true"></i></div>
+                        <h3>Consulting Services</h3>
+                        <p>Get clear, practical advice on technology, process and strategy from people who have done it before.</p>
+                        <a class="more" href="#contact">READ MORE &raquo;</a>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!------------ section 4 -------------->
-    <section class="s4-wrapper" id="about">
-        <div class="container">
-            <div class="s4">
-                <div class="s4box">
-                    <img src="../images/image 2.jpg" alt="Team">
-                </div>
-                <div class="s4box s4bluebox">
-                    <h3>Our call service <br/>world quality</h3>
-                    <p>Sample text. Click to select the Text Element.</p>
-                    <small>Image by Freepik</small>
-                </div>
-                <div class="s4box">
-                    <img src="../images/girl.jpg" alt="Team Lady">
-                </div>
-                <div class="s4box s4textbox">
-                    <h3>Web Design</h3>
-                    <p>Sample text. Click to select the Text Element.</p>
-                </div>
-                <div class="s4box">
-                    <img src="../images/team builng.jpg" alt="Team building">
-                </div>
-                <div class="s4box s4textbox">
-                    <h3>Online Research</h3>
-                    <p>Sample text. Click to select the Text Element.</p>
+        <!-- ================= SECTION 4: ABOUT GRID ================= -->
+        <section class="s4-wrapper" id="about">
+            <div class="container">
+                <div class="s4">
+                    <div class="s4box"><img src="images/image-2.jpg" alt="A consultant working on a laptop at a desk" width="275" height="183" loading="lazy"></div>
+                    <div class="s4box s4bluebox">
+                        <h3>Our call service, world quality</h3>
+                        <p>Friendly, knowledgeable support whenever you need it.</p>
+                        <small>Image by Freepik</small>
+                    </div>
+                    <div class="s4box"><img src="images/girl.jpg" alt="A developer working at her computer" width="269" height="148" loading="lazy"></div>
+                    <div class="s4box s4textbox">
+                        <h3>Web Design</h3>
+                        <p>Clean, fast websites that look great on every screen.</p>
+                    </div>
+                    <div class="s4box"><img src="images/team-building.jpg" alt="A team talking together in an office" width="275" height="183" loading="lazy"></div>
+                    <div class="s4box s4textbox">
+                        <h3>Online Research</h3>
+                        <p>Market and competitor insight to back your next decision.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!------------ section 5 -------------->
-    <section class="s5">
-        <div class="container">
-            <p class="s5para">Together we can envision, inspire <br/>and transform your business</p>
-            <div class="s5boxes">
-                <div class="s5box blue">
-                    <h1>50%</h1>
-                    <p>Whatever the scale and nature of your projects, our specialists have the skills and experience necessary to solve your problems successfully.</p>
-                </div>
-                <div class="s5box red">
-                    <h1>36%</h1>
-                    <p>Whatever the scale and nature of your projects, our specialists have the skills and experience necessary to solve your problems successfully.</p>
-                </div>
-                <div class="s5box grey">
-                    <h1>6%</h1>
-                    <p>Whatever the scale and nature of your projects, our specialists have the skills and experience necessary to solve your problems successfully.</p>
+        <!-- ================= SECTION 5: STATS ================= -->
+        <section class="s5">
+            <div class="container">
+                <p class="s5para">Together we can envision, inspire and transform your business</p>
+                <div class="s5boxes">
+                    <div class="s5box blue">
+                        <h2>50%</h2>
+                        <p>Whatever the scale and nature of your project, our specialists have the skills and experience to solve your problems successfully.</p>
+                    </div>
+                    <div class="s5box red">
+                        <h2>36%</h2>
+                        <p>Whatever the scale and nature of your project, our specialists have the skills and experience to solve your problems successfully.</p>
+                    </div>
+                    <div class="s5box grey">
+                        <h2>6%</h2>
+                        <p>Whatever the scale and nature of your project, our specialists have the skills and experience to solve your problems successfully.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!------------ section 6 -------------->
-    <section class="s6-wrapper">
-        <div class="container s6">
-            <div class="s6box1">
-                <h3 class="s6h3">We partner with the world's<br/> leading universities</h3>
-                <img src="../images/meeting2.jpg" alt="section6 Meeting">
-                <p>Etiam erat velit scelerisque in dictum non consectetur. Nisl purus in mollis nunc sed id semper. Cras fermentum odio eu feugiat pretium nibh ipsum. Image from <a class="s6link" href="https://www.freepik.com" target="_blank">Freepik</a></p>
-                <button>Read More</button>
+        <!-- ================= SECTION 6: PARTNERS + ACCORDION ================= -->
+        <section class="s6-wrapper">
+            <div class="container s6">
+                <div class="s6box1">
+                    <h3 class="s6h3">We partner with the world's leading universities</h3>
+                    <img src="https://unsplash.com/photos/S-IFwT3i40Y/download?w=1000"
+                         alt="Three professionals collaborating in a bright office"
+                         width="1000" height="667" loading="lazy"
+                         onerror="this.onerror=null;this.src='images/meeting2.jpg'">
+                    <p>Etiam erat velit scelerisque in dictum non consectetur. Nisl purus in mollis nunc sed id semper. Cras fermentum odio eu feugiat pretium nibh ipsum. Photo by Eduardo Ramos on <a class="s6link" href="https://unsplash.com/photos/S-IFwT3i40Y" target="_blank" rel="noopener">Unsplash</a></p>
+                    <a class="btn btn-red" href="#contact">Read more</a>
+                </div>
+                <div class="s6box2">
+                    <details class="acc" open>
+                        <summary>Create a webinar in minutes <span class="plus" aria-hidden="true">+</span></summary>
+                        <div class="acc-body">
+                            <p>Interdum velit euismod in pellentesque massa placerat duis. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Nibh nisl condimentum.</p>
+                            <ul>
+                                <li>Mattis nunc sed blandit libero volutpat.</li>
+                                <li>Tortor at risus viverra adipiscing at in tellus.</li>
+                                <li>Purus ut faucibus pulvinar elementum.</li>
+                                <li>Blandit turpis cursus in hac habitasse.</li>
+                            </ul>
+                        </div>
+                    </details>
+                    <details class="acc">
+                        <summary>Create a webinar in minutes <span class="plus" aria-hidden="true">+</span></summary>
+                        <div class="acc-body"><p>Add your own text here to explain this point.</p></div>
+                    </details>
+                    <details class="acc">
+                        <summary>Create a webinar in minutes <span class="plus" aria-hidden="true">+</span></summary>
+                        <div class="acc-body"><p>Add your own text here to explain this point.</p></div>
+                    </details>
+                </div>
             </div>
-            <div class="s6box2">
-                <div class="s6inner1">
-                    <span>Create a Webinar in minutes</span>
-                    <div class="s6Plus">+</div>
-                </div>
-                <div class="s6box2para">
-                    <p>Interdum velit euismod in pellentesque massa placerat duis. Tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Nibh nisl condimentum.</p>
-                    <ul>
-                        <li>Mattis nunc sed blandit libero volutpat.</li>
-                        <li>Tortor at risus viverra adipiscing at in tellus.</li>
-                        <li>Purus ut faucibus pulvinar elementum.</li>
-                        <li>Blandit turpis cursus in hac habitasse.</li>
-                    </ul>
-                </div>
-                <div class="s6inner2">
-                    <span>Create a Webinar in minutes</span>
-                    <div class="s6Plus">+</div>
-                </div>
-                <div class="s6inner2">
-                    <span>Create a Webinar in minutes</span>
-                    <div class="s6Plus">+</div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!------------ section 7 -------------->
-    <section class="s7" id="contact">
-        <div class="container s7-content">
-            <p>Add more speed to your website</p>
-            <h2>Your Success in the industry is our mission</h2>
-            <small>Sample text. Click to select the text element</small>
-            <button class="s7btn">Read More</button>
-        </div>
-    </section>
+        <!-- ================= SECTION 7: CLOSING BANNER ================= -->
+        <section class="s7" id="contact">
+            <div class="container s7-content">
+                <p>Add more speed to your website</p>
+                <h2>Your success in the industry is our mission</h2>
+                <small>Tell us about your project and we will get back to you.</small>
+                <a class="btn btn-red" href="mailto:support@technova.com">Read more</a>
+            </div>
+        </section>
+    </main>
 
     <!-- ================= FOOTER ================= -->
     <footer class="footer">
@@ -186,24 +191,25 @@
             </div>
             <div class="footer-col">
                 <h4>Quick Links</h4>
-                <a href="#">Home</a>
+                <a href="#top">Home</a>
                 <a href="#services">Services</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
             </div>
             <div class="footer-col">
                 <h4>Contact Info</h4>
-                <p><i class="fas fa-map-marker-alt"></i> 123 Business Rd, Suite 100</p>
-                <p><i class="fas fa-envelope"></i> support@technova.com</p>
-                <p><i class="fas fa-phone"></i> +1 (555) 234-5678</p>
+                <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 123 Business Rd, Suite 100</p>
+                <p><i class="fas fa-envelope" aria-hidden="true"></i> support@technova.com</p>
+                <p><i class="fas fa-phone" aria-hidden="true"></i> +1 (555) 234-5678</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <div class="container footer-bottom-inner">
+            <div class="container">
                 <p>&copy; 2026 TechNova Solutions. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
